@@ -8,7 +8,7 @@ class ProgressScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Interactive Progress'),
+        title: const Text('Progreso'),
       ),
       body: InteractiveProgress(),
     );

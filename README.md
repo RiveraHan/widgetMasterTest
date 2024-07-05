@@ -1,16 +1,38 @@
-# widget_master
+# Widget Master
 
-A new Flutter project.
+Este repositorio contiene tres widgets personalizados para Flutter:
 
-## Getting Started
+- **EducationalCard**: Una tarjeta educativa con imagen, título, descripción y botones interactivos.
+- **CustomProgressIndicator**: Un indicador de progreso circular personalizable.
+- **CustomQuiz**: Un widget de cuestionario personalizado.
 
-This project is a starting point for a Flutter application.
+## Instalación
 
-A few resources to get you started if this is your first Flutter project:
+1. Clona el repositorio en tu máquina local:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+   ```sh
+   git clone https://github.com/tu-usuario/widget-master.git
+   cd widget-master
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. Instala las dependencias de Flutter:
+    ```sh
+    flutter pub get
+3. Corre el app con el comando:
+    ```sh
+    flutter run
+4. Para correr las pruebas: 
+    ```sh
+    flutter test
+
+## Uso de los widgets
+
+### EducationalCard
+
+```dart
+EducationalCard(
+  imageUrl: 'https://example.com/image.jpg',
+  title: 'Título del Curso',
+  description: 'Descripción del curso.',
+  onViewMore: () => _viewMore(context, 'Título del Curso', 'https://example.com/image.jpg'),
+  onShare: () => _share(context, 'Título del Curso'),
+);

@@ -8,7 +8,7 @@ class QuizScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Custom Quiz'),
+        title: const Text('Quiz Personalizado'),
       ),
       body: const CustomQuiz(),
     );
